@@ -1,9 +1,0 @@
-version: '3.8'
-
-services:
-  nginx:
-    image: nginx:alpine
-    ports:
-      - "${APP_PORT}:80"
-    volumes:
-      - ${PWD}/src:/usr/share/nginx/html
