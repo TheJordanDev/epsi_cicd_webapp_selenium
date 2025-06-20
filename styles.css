@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+#todo-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    padding: 20px;
+    max-height: 70vh;
+    overflow-y: auto;
+    scrollbar-width: thin; /* For Firefox */
+    overflow-x: hidden;
+}
+
+#todo-list:not(:empty) {
+    
+    outline: 2px solid black;
+}
+
+.todo-item {
+    background: #fff;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.todo-item span {
+    flex-grow: 1;
+    color: #333;
+}
+
+.todo-item button {
+    background: #ff4d4d;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.todo-item button:hover {
+    background: #ff1a1a;
+}
+
+#new-todo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#new-todo input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+#new-todo button {
+    padding: 10px;
+    margin-left: 10px;
+    background: #28a745;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#new-todo button:hover {
+    background: #218838;
+}
