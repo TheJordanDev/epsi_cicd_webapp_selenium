@@ -6,4 +6,4 @@ services:
     ports:
       - "${APP_PORT}:80"
     volumes:
-      - ${PWD}/src:/etc/nginx/templates
+      - ${PWD}/src:/usr/share/nginx/html
